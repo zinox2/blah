@@ -235,6 +235,18 @@ collections:
         label: Price Text
         widget: string
         required: false
+      - hint: ''
+        name: f_upcoming
+        label: Upcoming
+        widget: boolean
+        required: false
+        default: false
+      - hint: ''
+        name: f_minting-now
+        label: Minting now
+        widget: boolean
+        required: false
+        default: false
       - label: Tags
         widget: hidden
         name: tags

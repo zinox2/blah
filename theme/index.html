@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html data-wf-page="640e103b346b3472212e94fb" data-wf-site="640e103a346b346c942e94f7"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
+<html data-wf-page="640e103b346b3472212e94fb" data-wf-site="640e103a346b346c942e94f7"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">
   <meta charset="utf-8">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  <title>NFT Calendar AGENDA : NFT DROPS</title>
+  <meta content="NFT Calendar AGENDA is a place where you can find latest Hot NFT Drops! Check our NFTCalendar and learn about new NFT collections! List your NFTs and promote your NFT project." name="description">
+  <meta content="NFT Calendar AGENDA : NFT DROPS" property="og:title">
+  <meta content="NFT Calendar AGENDA is a place where you can find latest Hot NFT Drops! Check our NFTCalendar and learn about new NFT collections! List your NFTs and promote your NFT project." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/640e103a346b346c942e94f7/6431d367e2d05797d3ef9526_nft2.png" property="og:image">
+  <meta content="NFT Calendar AGENDA : NFT DROPS" property="twitter:title">
+  <meta content="NFT Calendar AGENDA is a place where you can find latest Hot NFT Drops! Check our NFTCalendar and learn about new NFT collections! List your NFTs and promote your NFT project." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/640e103a346b346c942e94f7/6431d367e2d05797d3ef9526_nft2.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  
+  <meta content="Webflow" name="generator">
   <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/webflow.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/nftcalendarr.webflow.css" rel="stylesheet" type="text/css">
@@ -414,7 +414,7 @@ margin: 0rem !important;
               <div class="margin-bottom margin-large">
                 <h3 class="text-align-center _1">{{ texts.-24212c80 }}<span class="text-style-muted"></span></h3>
               </div>
-              {%- assign collection = collections.nft | filter: "f_status,eq,cms/mint-status/upcoming", "ALL", page.inputPath | sort: "f_presale-date" | limit: 6 -%}<div class="collection-list-wrapper w-dyn-list">
+              {%- assign collection = collections.nft | filter: "f_upcoming,eq,true", "ALL", page.inputPath | sort: "f_presale-date" | limit: 6 -%}<div class="collection-list-wrapper w-dyn-list">
                 {%- unless collection.length == 0 -%}<div role="list" class="nft w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="nft-item w-dyn-item">
                     <a href="{{ item.url }}" class="nftcard alt w-inline-block"><img loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;83vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;61vw&quot;}]" src="{{ item.data.f_image-gif.url }}" alt="{{ item.data.f_image-gif.alt }}" class="nft-image _3">
